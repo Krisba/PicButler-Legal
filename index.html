@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicButler — Smart Photo Cleaner for iPhone</title>
+    <meta name="description" content="Find duplicate and similar photos on your iPhone. PicButler picks the best version and tells you why. 100% on-device, no tracking.">
+    <meta name="keywords" content="photo cleaner, duplicate photos, similar photos, iPhone storage, photo organizer, privacy">
+    <link rel="canonical" href="https://picbutler.com">
+    <meta property="og:title" content="PicButler — Smart Photo Cleaner for iPhone">
+    <meta property="og:description" content="Find duplicates. Keep the best. Know why.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://picbutler.com">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #1C1C1E;
+            color: #f5f5f5;
+            line-height: 1.7;
+        }
+        a { color: #A55664; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 48px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .hero-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .hero h1 span { color: #A55664; }
+        .hero .subtitle {
+            font-size: 20px;
+            color: #c0c0c2;
+            margin-bottom: 32px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .app-store-badge img {
+            height: 54px;
+        }
+        .hero .pricing-hint {
+            font-size: 14px;
+            color: #999;
+        }
+
+        /* Features */
+        .features {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .features h2 {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .feature-card {
+            background: #2a2a2e;
+            border-radius: 16px;
+            padding: 24px;
+        }
+        .feature-card .icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 15px;
+            color: #c0c0c2;
+            line-height: 1.5;
+        }
+
+        /* Why section */
+        .why {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .why h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .why .intro {
+            font-size: 17px;
+            color: #c0c0c2;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        .why-list {
+            list-style: none;
+            padding: 0;
+        }
+        .why-list li {
+            font-size: 16px;
+            color: #f5f5f5;
+            padding: 12px 0;
+            border-bottom: 1px solid #2a2a2e;
+            padding-left: 24px;
+            position: relative;
+        }
+        .why-list li::before {
+            content: "\2192";
+            position: absolute;
+            left: 0;
+            color: #A55664;
+        }
+
+        /* Pricing */
+        .pricing {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        .pricing h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .pricing .tagline {
+            font-size: 17px;
+            color: #c0c0c2;
+            margin-bottom: 32px;
+        }
+        .pricing-cards {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .pricing-card {
+            background: #2a2a2e;
+            border-radius: 16px;
+            padding: 24px 32px;
+            min-width: 180px;
+        }
+        .pricing-card.featured {
+            border: 2px solid #A55664;
+        }
+        .pricing-card .label {
+            font-size: 13px;
+            color: #A55664;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .pricing-card .plan {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .pricing-card .price {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .pricing-card .period {
+            font-size: 14px;
+            color: #999;
+        }
+        .pricing-card .equivalent {
+            font-size: 13px;
+            color: #999;
+            margin-top: 4px;
+        }
+        .pricing .comparison {
+            font-size: 14px;
+            color: #999;
+            margin-top: 8px;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+            text-align: center;
+            border-top: 1px solid #2a2a2e;
+        }
+        footer .links {
+            margin-bottom: 16px;
+        }
+        footer .links a {
+            color: #c0c0c2;
+            margin: 0 12px;
+            font-size: 14px;
+        }
+        footer .links a:hover {
+            color: #A55664;
+        }
+        footer .copyright {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .hero .subtitle { font-size: 17px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .pricing-cards { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Find duplicates.<br><span>Keep the best.</span></h1>
+        <p class="subtitle">PicButler scans your iPhone photo library, picks the best version of every group, and tells you why. 100% on-device.</p>
+        <!-- Replace with actual App Store link when live -->
+        <a class="app-store-badge" href="https://apps.apple.com/app/picbutler-photo-cleaner/id6742045498" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+        <p class="pricing-hint">Free to scan. 3-day free trial to delete.</p>
+    </section>
+
+    <section class="features">
+        <h2>How it works</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">🔍</div>
+                <h3>Smart scan</h3>
+                <p>Finds exact duplicates, similar photos, and old screenshots in one pass.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">👑</div>
+                <h3>Picks the winner</h3>
+                <p>Scores each photo on sharpness, lighting, and resolution. The best one stays.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💡</div>
+                <h3>Tells you why</h3>
+                <p>Every winner comes with an explanation. No black boxes, no guessing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🗑️</div>
+                <h3>One tap to clean</h3>
+                <p>Review, adjust if needed, and delete everything at once. Photos go to Recently Deleted for 30 days.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <h2>Why PicButler exists</h2>
+        <p class="intro">The photo cleaner category is broken. Apps that charge $8/week while running 6 tracking SDKs in the background. Apps that let you select 500 photos, then show you the paywall. We built PicButler because we were tired of it too.</p>
+        <ul class="why-list">
+            <li>Your photos are analyzed on your device. Period.</li>
+            <li>No advertising SDKs. No user tracking. Analytics are fully anonymous.</li>
+            <li>One price, no tricks. See results free, then decide if it's worth it.</li>
+            <li>We tell you why each photo was selected as the winner, so you don't have to check every single one.</li>
+        </ul>
+    </section>
+
+    <section class="pricing">
+        <h2>Simple, honest pricing</h2>
+        <p class="tagline">No weekly subscriptions. No surprise charges.</p>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="plan">Monthly</div>
+                <div class="price">$6.99</div>
+                <div class="period">per month</div>
+            </div>
+            <div class="pricing-card featured">
+                <div class="label">Best value</div>
+                <div class="plan">Annual</div>
+                <div class="price">$29.99</div>
+                <div class="period">per year</div>
+                <div class="equivalent">$2.50/month</div>
+            </div>
+        </div>
+        <p class="comparison">That's $30/year — not $400+/year like the top-charting alternatives.</p>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="/privacy-policy.html">Privacy</a>
+            <a href="/terms-of-use.html">Terms</a>
+            <a href="/support.html">Support</a>
+            <a href="mailto:herenow.software@gmail.com">Contact</a>
+        </div>
+        <p class="copyright">&copy; 2026 HereNow Software. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

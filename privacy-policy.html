@@ -28,27 +28,39 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Effective date: March 4, 2026</p>
+    <p class="date">Effective date: May 24, 2026</p>
 
-    <p>PicButler: Photo Cleaner ("PicButler", "we", "our") is designed with a simple principle: <span class="highlight">your photos never leave your device</span>.</p>
+    <p>PicButler ("PicButler", "we", "our") is designed with a simple principle: <span class="highlight">your photos never leave your device.</span> All scanning, analysis, scoring, and event detection happens locally on your iPhone using Apple's on-device frameworks (PhotoKit, Vision, Core Image). No photos, thumbnails, hashes, feature prints, or quality analysis are ever uploaded.</p>
 
     <h2>What we access</h2>
     <p>PicButler accesses your photo library through Apple's PhotoKit framework to:</p>
     <ul>
-        <li>Scan photos to detect duplicates, similar images, and screenshots</li>
-        <li>Analyze image quality (sharpness, lighting, resolution) to recommend the best version</li>
+        <li>Detect events using photo creation dates, attached location data, and visual similarity (computed on-device)</li>
+        <li>Identify duplicates, similar images, and screenshots</li>
+        <li>Analyze image quality (sharpness, lighting, resolution, faces) to recommend a best version per group</li>
+        <li>Classify event content (e.g., concert, beach, dinner) using Apple's on-device Vision framework</li>
+        <li>Write per-event albums to your iOS Photos library after you confirm a curation</li>
         <li>Delete photos you choose to remove (with your explicit confirmation each time)</li>
     </ul>
 
     <h2>What we collect</h2>
-    <p><span class="highlight">No photos, no personal data.</span> All photo scanning, analysis, and scoring happens entirely on your iPhone. No photos, metadata, thumbnails, hashes, or analysis results are ever uploaded to any server.</p>
+    <p><span class="highlight">No photos, no personal data.</span> All photo content, thumbnails, and per-photo scoring stay on your device. PicButler does not have a server, does not transmit photos anywhere, and cannot link any of its activity back to your identity.</p>
+
+    <h2>Information that does leave your device</h2>
+    <p>To keep the privacy picture honest, the following limited categories of information leave your device through services provided by Apple. They never include your photos or personal identifiers.</p>
+    <ul>
+        <li><span class="highlight">Reverse-geocoding of event locations.</span> When PicButler detects an event with location data, it sends the event's center coordinate (a single latitude/longitude) to Apple's CLGeocoder service to resolve a human-readable place name (e.g., "Buenos Aires"). Coordinates are sent to Apple, not to us. Resolved place names are cached on your device. Photos themselves are never sent.</li>
+        <li><span class="highlight">iCloud Key-Value Store for aggregate stats.</span> If you are signed into iCloud, PicButler stores small aggregate counters (e.g., total bytes freed, last cleanup date) in <code>NSUbiquitousKeyValueStore</code>, which Apple syncs encrypted across your devices through your iCloud account. We never see this data.</li>
+        <li><span class="highlight">iCloud Photos sync of curated albums.</span> The "PicButler · &lt;event name&gt;" albums PicButler writes to iOS Photos are part of your standard photo library. If you have iCloud Photos enabled, they sync to your other devices through Apple's iCloud Photos service per your iCloud settings.</li>
+    </ul>
 
     <h2>Analytics</h2>
-    <p>PicButler uses <a href="https://telemetrydeck.com" target="_blank">TelemetryDeck</a> for anonymous, aggregated analytics. This helps us understand how the app is used (e.g., how many scans are completed) so we can improve it.</p>
+    <p>PicButler uses <a href="https://telemetrydeck.com" target="_blank">TelemetryDeck</a> for anonymous, aggregated analytics. This helps us understand how the app is used (e.g., how many curations are completed) so we can improve it.</p>
     <ul>
         <li>No personal identifiers are collected</li>
-        <li>No advertising SDKs or tracking services</li>
-        <li>Analytics data cannot be linked to your identity</li>
+        <li>No photos, file names, or content are ever sent</li>
+        <li>No advertising SDKs or third-party trackers</li>
+        <li>Analytics data cannot be linked back to your identity</li>
         <li>We see trends and counts, not individual users</li>
     </ul>
 
@@ -59,14 +71,22 @@
     <p>All payment processing is handled entirely by Apple through the App Store. PicButler never sees, stores, or has access to your payment information, Apple ID, or billing details.</p>
 
     <h2>On-device storage</h2>
-    <p>Scan results are stored locally on your device as a small data file. This file contains only photo identifiers and quality scores — not the photos themselves. This data never leaves your device and is deleted when you uninstall the app.</p>
+    <p>PicButler stores the following on your device:</p>
+    <ul>
+        <li>Scan results and event records (photo identifiers, quality scores, your curation decisions) — saved as small data files in the app's container</li>
+        <li>Cached thumbnails, feature prints, and difference hashes used to speed up re-scans</li>
+        <li>Cached resolved place names for events you've already curated</li>
+    </ul>
+    <p>None of this data contains your photos themselves. It is deleted when you uninstall the app. Curated albums you've written to iOS Photos remain in your Photos library after uninstall — they are yours.</p>
 
     <h2>Your control</h2>
     <ul>
-        <li>You can revoke photo library access at any time in iOS Settings > PicButler</li>
+        <li>You can revoke photo library access at any time in iOS Settings &gt; PicButler</li>
+        <li>You can disable Location Services for PicButler at any time in iOS Settings &gt; Privacy &gt; Location. PicButler will then skip the reverse-geocoding step for new events</li>
+        <li>You can turn off iCloud Photos sync independently of PicButler in iOS Settings &gt; Apple ID &gt; iCloud &gt; Photos</li>
         <li>Photos are only deleted with your explicit confirmation through the iOS system prompt</li>
         <li>Deleted photos go to your Recently Deleted album for 30 days before permanent removal</li>
-        <li>Uninstalling the app removes all locally stored data</li>
+        <li>Uninstalling the app removes all locally stored PicButler data. iOS Photos albums you've already curated stay in your Photos library</li>
     </ul>
 
     <h2>Children's privacy</h2>
@@ -76,6 +96,6 @@
     <p>If we update this policy, the revised version will be posted at this URL with an updated effective date.</p>
 
     <h2>Contact</h2>
-    <p>Questions about this policy? Reach us at <a href="mailto:support@picbutler.com">support@picbutler.com</a></p>
+    <p>Questions about this policy? Reach us at <a href="mailto:herenow.software@gmail.com">herenow.software@gmail.com</a></p>
 </body>
 </html>

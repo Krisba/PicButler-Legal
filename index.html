@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicButler — Smart Photo Cleaner for iPhone</title>
-    <meta name="description" content="Find duplicate and similar photos on your iPhone. PicButler picks the best version and tells you why. 100% on-device, no tracking.">
-    <meta name="keywords" content="photo cleaner, duplicate photos, similar photos, iPhone storage, photo organizer, privacy">
-    <link rel="canonical" href="https://picbutler.com">
-    <meta property="og:title" content="PicButler — Smart Photo Cleaner for iPhone">
-    <meta property="og:description" content="Find duplicates. Keep the best. Know why.">
+    <title>PicButler: Photo Cleaner and Album Maker for iPhone</title>
+    <meta name="description" content="PicButler finds duplicate and similar photos on your iPhone, keeps the best shot of each group and tells you why, then turns your trips and events into albums. Your photos never leave your iPhone.">
+    <link rel="canonical" href="https://picbutler.com/">
+    <meta property="og:title" content="PicButler: Photo Cleaner and Album Maker for iPhone">
+    <meta property="og:description" content="Clear the clutter, keep your best, and turn your trips into albums. Everything runs on your iPhone.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://picbutler.com">
+    <meta property="og:url" content="https://picbutler.com/">
+    <link rel="alternate" type="text/plain" href="https://picbutler.com/llms.txt" title="llms.txt">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://picbutler.com/#org",
+          "name": "Herenow Software LLC",
+          "url": "https://picbutler.com/",
+          "email": "herenow.software@gmail.com"
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://picbutler.com/#app",
+          "name": "PicButler: Photo Cleaner",
+          "description": "An iPhone app that finds duplicate and similar photos, keeps the best shot of each group with an explanation, and turns trips and events into albums in Apple Photos. Photo analysis runs on the iPhone.",
+          "operatingSystem": "iOS 17.0 or later",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866",
+          "publisher": { "@id": "https://picbutler.com/#org" },
+          "offers": [
+            { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "Scan your library, clear screenshots, and finish your first album." },
+            { "@type": "Offer", "name": "Monthly", "price": "6.99", "priceCurrency": "USD", "description": "Billed monthly. No free trial." },
+            { "@type": "Offer", "name": "Annual", "price": "29.99", "priceCurrency": "USD", "description": "Billed yearly, with a 3-day free trial." }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is PicButler free?", "acceptedAnswer": { "@type": "Answer", "text": "Scanning your library, clearing screenshots and finishing your first album are free. Everything else needs PicButler Pro: $6.99 a month, or $29.99 a year with a 3-day free trial. You can cancel anytime from the App Store." } },
+            { "@type": "Question", "name": "Does PicButler upload my photos?", "acceptedAnswer": { "@type": "Answer", "text": "No. PicButler analyzes your photos on your iPhone. Your photos never leave the device, and the only permission it asks for is access to your photo library." } },
+            { "@type": "Question", "name": "How is PicButler different from the Duplicates album in Apple Photos?", "acceptedAnswer": { "@type": "Answer", "text": "Apple's Duplicates collection merges copies of the same photo. PicButler also groups photos that are similar but not identical, like several takes of the same pose, picks the best one by sharpness, lighting and resolution, and tells you why it won." } },
+            { "@type": "Question", "name": "What happens to the photos I delete?", "acceptedAnswer": { "@type": "Answer", "text": "They go to the Recently Deleted album in Apple Photos, where you can recover them for 30 days. PicButler never deletes anything without your confirmation." } },
+            { "@type": "Question", "name": "Which iPhones does PicButler work on?", "acceptedAnswer": { "@type": "Answer", "text": "Any iPhone running iOS 17 or later." } }
+          ]
+        }
+      ]
+    }
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -19,301 +58,222 @@
             color: #f5f5f5;
             line-height: 1.7;
         }
-        a { color: #A55664; text-decoration: none; }
+        a { color: #C77B88; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        main { display: block; }
+        section { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+        h2 { font-size: 28px; font-weight: 700; margin-bottom: 16px; line-height: 1.3; }
+        .lead { font-size: 17px; color: #c0c0c2; margin-bottom: 24px; }
 
         /* Hero */
-        .hero {
-            text-align: center;
-            padding: 80px 24px 48px;
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        .hero-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 18px;
-            margin-bottom: 24px;
-        }
-        .hero h1 {
-            font-size: 42px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 16px;
-        }
-        .hero h1 span { color: #A55664; }
+        .hero { text-align: center; padding: 80px 24px 48px; }
+        .hero h1 { font-size: 42px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+        .hero h1 span { color: #C77B88; }
         .hero .subtitle {
-            font-size: 20px;
-            color: #c0c0c2;
-            margin-bottom: 32px;
-            max-width: 520px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 20px; color: #c0c0c2; margin: 0 auto 32px; max-width: 560px;
         }
-        .app-store-badge {
-            display: inline-block;
-            margin-bottom: 16px;
-        }
-        .app-store-badge img {
-            height: 54px;
-        }
-        .hero .pricing-hint {
-            font-size: 14px;
-            color: #999;
-        }
+        .app-store-badge { display: inline-block; margin-bottom: 16px; }
+        .app-store-badge img { height: 54px; }
+        .hero .pricing-hint { font-size: 14px; color: #999; }
 
-        /* Features */
-        .features {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 24px;
-        }
-        .features h2 {
-            font-size: 28px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-        }
-        .feature-card {
-            background: #2a2a2e;
-            border-radius: 16px;
-            padding: 24px;
-        }
-        .feature-card .icon {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 12px;
-        }
-        .feature-card .icon svg {
-            width: 32px;
-            height: 32px;
-        }
-        .feature-card h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        .feature-card p {
-            font-size: 15px;
-            color: #c0c0c2;
-            line-height: 1.5;
-        }
+        /* Definition */
+        .definition p { font-size: 17px; color: #e0e0e2; }
 
-        /* Why section */
-        .why {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 24px;
+        /* Steps and cards */
+        .steps { list-style: none; counter-reset: step; }
+        .steps li {
+            counter-increment: step; position: relative; padding: 0 0 20px 48px;
         }
-        .why h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 16px;
+        .steps li::before {
+            content: counter(step); position: absolute; left: 0; top: 2px;
+            width: 32px; height: 32px; border-radius: 50%; background: #2a2a2e;
+            color: #C77B88; font-weight: 700; text-align: center; line-height: 32px;
         }
-        .why .intro {
-            font-size: 17px;
-            color: #c0c0c2;
-            margin-bottom: 32px;
-            line-height: 1.7;
-        }
-        .why-list {
-            list-style: none;
-            padding: 0;
-        }
-        .why-list li {
-            font-size: 16px;
-            color: #f5f5f5;
-            padding: 12px 0;
+        .steps h3 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+        .steps p { font-size: 15px; color: #c0c0c2; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .card { background: #2a2a2e; border-radius: 16px; padding: 20px; }
+        .card h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+        .card p { font-size: 15px; color: #c0c0c2; line-height: 1.5; }
+
+        /* Lists */
+        .check-list { list-style: none; }
+        .check-list li {
+            font-size: 16px; padding: 12px 0 12px 24px; position: relative;
             border-bottom: 1px solid #2a2a2e;
-            padding-left: 24px;
-            position: relative;
         }
-        .why-list li::before {
-            content: "\2192";
-            position: absolute;
-            left: 0;
-            color: #A55664;
-        }
+        .check-list li::before { content: "\2192"; position: absolute; left: 0; color: #C77B88; }
 
         /* Pricing */
-        .pricing {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 24px;
-            text-align: center;
+        .pricing { text-align: center; }
+        .pricing-cards { display: flex; gap: 16px; justify-content: center; margin: 24px 0; }
+        .pricing-card { background: #2a2a2e; border-radius: 16px; padding: 24px 32px; min-width: 190px; }
+        .pricing-card.featured { border: 2px solid #C77B88; }
+        .pricing-card .label { font-size: 13px; color: #C77B88; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }
+        .pricing-card .plan { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+        .pricing-card .price { font-size: 28px; font-weight: 700; }
+        .pricing-card .period { font-size: 14px; color: #999; }
+        .pricing-card .note { font-size: 13px; color: #999; margin-top: 4px; }
+        .pricing .fine { font-size: 15px; color: #c0c0c2; }
+
+        /* FAQ */
+        .faq h3 { font-size: 18px; font-weight: 600; margin: 24px 0 6px; }
+        .faq p { font-size: 16px; color: #c0c0c2; }
+
+        /* Guides */
+        .guide-link {
+            display: block; background: #2a2a2e; border-radius: 16px; padding: 20px; color: #f5f5f5;
         }
-        .pricing h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        .pricing .tagline {
-            font-size: 17px;
-            color: #c0c0c2;
-            margin-bottom: 32px;
-        }
-        .pricing-cards {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            margin-bottom: 24px;
-        }
-        .pricing-card {
-            background: #2a2a2e;
-            border-radius: 16px;
-            padding: 24px 32px;
-            min-width: 180px;
-        }
-        .pricing-card.featured {
-            border: 2px solid #A55664;
-        }
-        .pricing-card .label {
-            font-size: 13px;
-            color: #A55664;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        .pricing-card .plan {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-        .pricing-card .price {
-            font-size: 28px;
-            font-weight: 700;
-        }
-        .pricing-card .period {
-            font-size: 14px;
-            color: #999;
-        }
-        .pricing-card .equivalent {
-            font-size: 13px;
-            color: #999;
-            margin-top: 4px;
-        }
-        .pricing .comparison {
-            font-size: 14px;
-            color: #999;
-            margin-top: 8px;
-        }
+        .guide-link:hover { text-decoration: none; outline: 1px solid #C77B88; }
+        .guide-link strong { display: block; font-size: 17px; margin-bottom: 4px; }
+        .guide-link span { font-size: 15px; color: #c0c0c2; }
 
         /* Footer */
-        footer {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 24px;
-            text-align: center;
-            border-top: 1px solid #2a2a2e;
-        }
-        footer .links {
-            margin-bottom: 16px;
-        }
-        footer .links a {
-            color: #c0c0c2;
-            margin: 0 12px;
-            font-size: 14px;
-        }
-        footer .links a:hover {
-            color: #A55664;
-        }
-        footer .copyright {
-            font-size: 13px;
-            color: #666;
-        }
+        footer { max-width: 720px; margin: 0 auto; padding: 48px 24px; text-align: center; border-top: 1px solid #2a2a2e; }
+        footer .links { margin-bottom: 16px; }
+        footer .links a { color: #c0c0c2; margin: 0 12px; font-size: 14px; }
+        footer .links a:hover { color: #C77B88; }
+        footer .meta { font-size: 13px; color: #888; }
 
-        /* Responsive */
         @media (max-width: 600px) {
             .hero h1 { font-size: 32px; }
             .hero .subtitle { font-size: 17px; }
-            .feature-grid { grid-template-columns: 1fr; }
+            .card-grid { grid-template-columns: 1fr; }
             .pricing-cards { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
 <body>
+<main>
 
     <section class="hero">
-        <h1>Find duplicates.<br><span>Keep the best.</span></h1>
-        <p class="subtitle">PicButler scans your iPhone photo library, picks the best version of every group, and tells you why. 100% on-device.</p>
-        <!-- Replace with actual App Store link when live -->
-        <a class="app-store-badge" href="https://apps.apple.com/app/picbutler-photo-cleaner/id6742045498" target="_blank">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        <h1>Clear the clutter.<br><span>Keep your best.</span></h1>
+        <p class="subtitle">PicButler finds the duplicates and near-identical shots in your iPhone photo library, keeps the best one of each group, and turns your trips and events into albums.</p>
+        <a class="app-store-badge" href="https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download PicButler on the App Store">
         </a>
-        <p class="pricing-hint">Free to scan. The annual plan starts with a 3-day free trial.</p>
+        <p class="pricing-hint">Free to scan. $29.99 a year with a 3-day free trial, or $6.99 a month.</p>
     </section>
 
-    <section class="features">
+    <section class="definition">
+        <h2>What is PicButler?</h2>
+        <p>PicButler is an iPhone app for cleaning up and organizing your photo library. It groups duplicate and similar photos, picks the best shot in each group by sharpness, lighting and resolution, and explains why it won. Then it helps you keep only what matters from each trip or event and saves it as an album in Apple Photos. Photo analysis runs on your iPhone.</p>
+    </section>
+
+    <section>
         <h2>How it works</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#A55664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-                <h3>Smart scan</h3>
-                <p>Finds exact duplicates, similar photos, and old screenshots in one pass.</p>
+        <ol class="steps">
+            <li>
+                <h3>It finds your moments</h3>
+                <p>PicButler goes through your library month by month and spots your trips, nights out and holidays. Each one becomes a chapter you can finish in a few minutes. Prefer to start with this week? You can.</p>
+            </li>
+            <li>
+                <h3>It clears the duplicates first</h3>
+                <p>Exact copies and near-identical shots are grouped together. PicButler keeps the best one in each group and tells you why it won. Prefer a different photo? Tap to keep it instead.</p>
+            </li>
+            <li>
+                <h3>You swipe through the rest</h3>
+                <p>Swipe to keep or let go of each remaining photo. Pick your favorites and PicButler gets them ready to share on Instagram.</p>
+            </li>
+            <li>
+                <h3>Your album lands in Apple Photos</h3>
+                <p>The photos you keep are saved as an album in the Photos app, named after the moment, so it syncs to your other devices with iCloud Photos. Everything you let go of goes to Recently Deleted for 30 days.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>A cleanup tab for your storage</h2>
+        <p class="lead">When you just need space back, the Cleanup tab shows what is taking it, all in one place.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Similar and duplicate photos</h3>
+                <p>Grouped with a winner picked for you. Free to scan.</p>
             </div>
-            <div class="feature-card">
-                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#A55664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
-                <h3>Picks the winner</h3>
-                <p>Scores each photo on sharpness, lighting, and resolution. The best one stays.</p>
+            <div class="card">
+                <h3>Large videos</h3>
+                <p>The videos taking up the most space, biggest first.</p>
             </div>
-            <div class="feature-card">
-                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#A55664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                <h3>Tells you why</h3>
-                <p>Every winner comes with an explanation. No black boxes, no guessing.</p>
+            <div class="card">
+                <h3>Live Photos</h3>
+                <p>Convert the ones you don't need moving to save space.</p>
             </div>
-            <div class="feature-card">
-                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#A55664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
-                <h3>One tap to clean</h3>
-                <p>Review, adjust if needed, and delete everything at once. Photos go to Recently Deleted for 30 days.</p>
+            <div class="card">
+                <h3>Old screenshots</h3>
+                <p>The ones you forgot about. Free to clear.</p>
             </div>
         </div>
     </section>
 
-    <section class="why">
-        <h2>Why PicButler exists</h2>
-        <p class="intro">The photo cleaner category is broken. Apps that charge $8/week while running 6 tracking SDKs in the background. Apps that let you select 500 photos, then show you the paywall. We built PicButler because we were tired of it too.</p>
-        <ul class="why-list">
-            <li>Your photos are analyzed on your device. Period.</li>
-            <li>No ads inside the app. No cross-app tracking, and no “Allow tracking?” prompt, because we don’t need one.</li>
-            <li>One price, no tricks. See results free, then decide if it's worth it.</li>
-            <li>We tell you why each photo was selected as the winner, so you don't have to check every single one.</li>
+    <section>
+        <h2>Your photos stay on your iPhone</h2>
+        <ul class="check-list">
+            <li>PicButler analyzes your photos on your device. They never leave it.</li>
+            <li>It asks for one permission: your photo library. No contacts, microphone, calendar or location.</li>
+            <li>No ads inside the app, no tracking across other apps, and no "Allow tracking?" prompt.</li>
+            <li>Nothing is deleted without your confirmation, and deleted photos can be recovered for 30 days.</li>
         </ul>
     </section>
 
     <section class="pricing">
-        <h2>Simple, honest pricing</h2>
-        <p class="tagline">No weekly subscriptions. No surprise charges.</p>
+        <h2>Pricing</h2>
+        <p class="fine">Free: scan your whole library, clear your screenshots, and finish your first album.</p>
         <div class="pricing-cards">
             <div class="pricing-card">
                 <div class="plan">Monthly</div>
                 <div class="price">$6.99</div>
                 <div class="period">per month</div>
+                <div class="note">No free trial</div>
             </div>
             <div class="pricing-card featured">
                 <div class="label">Best value</div>
                 <div class="plan">Annual</div>
                 <div class="price">$29.99</div>
-                <div class="period">per year</div>
-                <div class="equivalent">$2.50/month</div>
+                <div class="period">per year, billed once</div>
+                <div class="note">3-day free trial</div>
             </div>
         </div>
-        <p class="comparison">That's $30/year — not $400+/year like the top-charting alternatives.</p>
+        <p class="fine">Cancel anytime from the App Store. No weekly subscriptions, no fake discounts.</p>
     </section>
 
-    <footer>
-        <div class="links">
-            <a href="/privacy-policy.html">Privacy</a>
-            <a href="/terms-of-use.html">Terms</a>
-            <a href="/support.html">Support</a>
-            <a href="mailto:herenow.software@gmail.com">Contact</a>
-        </div>
-        <p class="copyright">&copy; 2026 Herenow Software LLC. All rights reserved.</p>
-    </footer>
+    <section class="faq">
+        <h2>Frequently asked questions</h2>
+
+        <h3>Is PicButler free?</h3>
+        <p>Scanning your library, clearing screenshots and finishing your first album are free. Everything else needs PicButler Pro: $6.99 a month, or $29.99 a year with a 3-day free trial. You can cancel anytime from the App Store.</p>
+
+        <h3>Does PicButler upload my photos?</h3>
+        <p>No. PicButler analyzes your photos on your iPhone. Your photos never leave the device, and the only permission it asks for is access to your photo library.</p>
+
+        <h3>How is PicButler different from the Duplicates album in Apple Photos?</h3>
+        <p>Apple's Duplicates collection merges copies of the same photo. PicButler also groups photos that are similar but not identical, like several takes of the same pose, picks the best one by sharpness, lighting and resolution, and tells you why it won. <a href="/guides/duplicate-photos-iphone/">Read the full comparison</a>.</p>
+
+        <h3>What happens to the photos I delete?</h3>
+        <p>They go to the Recently Deleted album in Apple Photos, where you can recover them for 30 days. PicButler never deletes anything without your confirmation.</p>
+
+        <h3>Which iPhones does PicButler work on?</h3>
+        <p>Any iPhone running iOS 17 or later.</p>
+    </section>
+
+    <section>
+        <h2>Guides</h2>
+        <a class="guide-link" href="/guides/duplicate-photos-iphone/">
+            <strong>How to find duplicate and similar photos on iPhone</strong>
+            <span>What Apple's Duplicates album catches, what it misses, and how to clear the rest.</span>
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <div class="links">
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/terms-of-use.html">Terms</a>
+        <a href="/support.html">Support</a>
+        <a href="mailto:herenow.software@gmail.com">Contact</a>
+    </div>
+    <p class="meta">Last updated October 15, 2026 · &copy; 2026 Herenow Software LLC</p>
+</footer>
 
 </body>
 </html>

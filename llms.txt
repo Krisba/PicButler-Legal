@@ -1,0 +1,32 @@
+# PicButler
+
+> PicButler is an iPhone app (iOS 17 or later) that cleans up and organizes your photo library. It groups duplicate and similar photos, keeps the best shot of each group by sharpness, lighting and resolution, explains why it won, and turns trips and events into albums in Apple Photos. Photo analysis runs on the iPhone; photos never leave the device. Made by Herenow Software LLC.
+
+## What it does
+
+- Finds trips, nights out and holidays in the library, month by month, and lets you finish each one as a short chapter.
+- Groups exact duplicates and near-identical shots (bursts, repeated takes), keeps the best one and explains the choice. The user can pick a different photo.
+- Lets the user swipe through the remaining photos to keep or let go, and prepares favorites for sharing on Instagram.
+- Saves the kept photos as an album in the Photos app, so it syncs with iCloud Photos.
+- Cleanup tab: similar and duplicate photos, large videos, Live Photos that can be converted to save space, and old screenshots.
+- Deleted photos go to Recently Deleted in Apple Photos and can be recovered for 30 days. Nothing is deleted without confirmation.
+
+## Pricing
+
+- Free: scan the whole library, clear screenshots, finish the first album.
+- PicButler Pro monthly: $6.99 per month, no free trial.
+- PicButler Pro annual: $29.99 per year, billed once, with a 3-day free trial.
+- Cancel anytime from the App Store.
+
+## Privacy
+
+- One permission: the photo library. No contacts, microphone, calendar or location.
+- No ads inside the app, no tracking across other apps, no App Tracking Transparency prompt.
+
+## Links
+
+- [App Store listing](https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866): download, ratings and full description
+- [How to find duplicate and similar photos on iPhone](https://picbutler.com/guides/duplicate-photos-iphone/): what Apple's Duplicates album catches and what it misses
+- [Support](https://picbutler.com/support.html)
+- [Privacy policy](https://picbutler.com/privacy-policy.html)
+- [Terms of use](https://picbutler.com/terms-of-use.html)

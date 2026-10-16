@@ -10,6 +10,13 @@
     <meta property="og:description" content="Clear the clutter, keep your best, and turn your trips into albums. Everything runs on your iPhone.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://picbutler.com/">
+    <meta property="og:image" content="https://picbutler.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="apple-itunes-app" content="app-id=6760083866">
+    <link rel="icon" type="image/png" href="/assets/favicon-64.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="alternate" type="text/plain" href="https://picbutler.com/llms.txt" title="llms.txt">
     <script type="application/ld+json">
     {
@@ -20,7 +27,9 @@
           "@id": "https://picbutler.com/#org",
           "name": "Herenow Software LLC",
           "url": "https://picbutler.com/",
-          "email": "herenow.software@gmail.com"
+          "logo": "https://picbutler.com/assets/icon-256.png",
+          "email": "herenow.software@gmail.com",
+          "founder": { "@type": "Person", "name": "Chris" }
         },
         {
           "@type": "MobileApplication",
@@ -30,6 +39,15 @@
           "operatingSystem": "iOS 17.0 or later",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866",
+          "image": "https://picbutler.com/assets/icon-256.png",
+          "screenshot": [
+            "https://picbutler.com/assets/screenshot-1.jpg",
+            "https://picbutler.com/assets/screenshot-2.jpg",
+            "https://picbutler.com/assets/screenshot-3.jpg",
+            "https://picbutler.com/assets/screenshot-4.jpg",
+            "https://picbutler.com/assets/screenshot-5.jpg"
+          ],
+          "datePublished": "2026-03-19",
           "publisher": { "@id": "https://picbutler.com/#org" },
           "offers": [
             { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "Scan your library, clear screenshots, and finish your first album." },
@@ -66,7 +84,33 @@
         .lead { font-size: 17px; color: #c0c0c2; margin-bottom: 24px; }
 
         /* Hero */
-        .hero { text-align: center; padding: 80px 24px 48px; }
+        .hero { text-align: center; padding: 72px 24px 48px; }
+        .hero-icon { width: 96px; height: 96px; margin-bottom: 24px; }
+        .rating { font-size: 14px; color: #c0c0c2; margin-bottom: 6px; }
+        .rating .stars { color: #E2B66B; letter-spacing: 1px; }
+
+        /* Screenshots */
+        .gallery-wrap { max-width: 1100px; margin: 0 auto; padding: 8px 0 32px; }
+        .gallery {
+            display: flex; gap: 16px; overflow-x: auto; padding: 0 24px 12px;
+            scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+        }
+        .gallery img {
+            flex: 0 0 auto; width: 220px; height: auto; border-radius: 22px;
+            scroll-snap-align: center;
+        }
+        @media (min-width: 1180px) {
+            .gallery { justify-content: center; }
+            .gallery img { width: 200px; }
+        }
+
+        /* Reviews */
+        .reviews blockquote { background: #2a2a2e; border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+        .reviews blockquote p { font-size: 17px; color: #f5f5f5; margin-bottom: 8px; }
+        .reviews cite { font-size: 14px; color: #999; font-style: normal; }
+
+        /* About */
+        .about p { font-size: 17px; color: #e0e0e2; margin-bottom: 14px; }
         .hero h1 { font-size: 42px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
         .hero h1 span { color: #C77B88; }
         .hero .subtitle {
@@ -147,13 +191,25 @@
 <main>
 
     <section class="hero">
+        <img class="hero-icon" src="/assets/icon-256.png" alt="PicButler app icon: a camera lens wearing a red bow tie" width="96" height="96">
         <h1>Clear the clutter.<br><span>Keep your best.</span></h1>
         <p class="subtitle">PicButler finds the duplicates and near-identical shots in your iPhone photo library, keeps the best one of each group, and turns your trips and events into albums.</p>
         <a class="app-store-badge" href="https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866">
             <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download PicButler on the App Store">
         </a>
+        <p class="rating"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated 4.9 out of 5 on the App Store</p>
         <p class="pricing-hint">Free to scan. $29.99 a year with a 3-day free trial, or $6.99 a month.</p>
     </section>
+
+    <div class="gallery-wrap">
+        <div class="gallery" aria-label="PicButler screenshots">
+            <img src="/assets/screenshot-1.jpg" width="600" height="1303" loading="lazy" alt="PicButler home screen suggesting a trip to review first, Lake Michigan, with other events below.">
+            <img src="/assets/screenshot-2.jpg" width="600" height="1303" loading="lazy" alt="Duplicates screen: groups of exact copies side by side, with a button to keep the best and clean the rest.">
+            <img src="/assets/screenshot-3.jpg" width="600" height="1303" loading="lazy" alt="Swipe review: swipe left to let a photo go, right to keep it.">
+            <img src="/assets/screenshot-4.jpg" width="600" height="1303" loading="lazy" alt="Collection screen: finished albums, like a wedding, saved as keepsakes.">
+            <img src="/assets/screenshot-5.jpg" width="600" height="1303" loading="lazy" alt="Instagram setup: choose a single post or a carousel of 2, 4 or 10 photos while you review.">
+        </div>
+    </div>
 
     <section class="definition">
         <h2>What is PicButler?</h2>
@@ -234,6 +290,25 @@
             </div>
         </div>
         <p class="fine">Cancel anytime from the App Store. No weekly subscriptions, no fake discounts.</p>
+    </section>
+
+    <section class="reviews">
+        <h2>What people say on the App Store</h2>
+        <blockquote>
+            <p>"My phone had +6,000 photos and was constantly running out of storage. This app found duplicates I didn't even know I had and it was actually accurate. Intuitive and fast"</p>
+            <cite>Alef Plantard, "Cleaned 4GB in 5 minutes", 5 stars, United States, April 2026</cite>
+        </blockquote>
+        <blockquote>
+            <p>"overall very easy deletion"</p>
+            <cite>Sophie keim, "best app!!", 5 stars, United States, July 2026</cite>
+        </blockquote>
+    </section>
+
+    <section class="about">
+        <h2>Who makes PicButler</h2>
+        <p>PicButler is made by Chris, an independent developer, and published by Herenow Software LLC. It launched on the App Store in March 2026.</p>
+        <p>It started as a duplicate photo cleaner. Cleaning turned out to be only half the job: what people want is to find their best moments again and keep them. So PicButler now works through your library one moment at a time, and the space you get back is the side effect.</p>
+        <p>Questions or feedback: <a href="mailto:herenow.software@gmail.com">herenow.software@gmail.com</a>.</p>
     </section>
 
     <section class="faq">

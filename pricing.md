@@ -19,4 +19,4 @@ Purchases and cancellations go through the App Store.
 
 Cancel anytime from the App Store. No weekly plans.
 
-App Store: https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866
+App Store: https://apps.apple.com/app/apple-store/id6760083866?pt=128539137&mt=8&ct=llms

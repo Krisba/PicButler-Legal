@@ -25,7 +25,7 @@
 
 ## Links
 
-- [App Store listing](https://apps.apple.com/us/app/picbutler-photo-cleaner/id6760083866): download, ratings and full description
+- [App Store listing](https://apps.apple.com/app/apple-store/id6760083866?pt=128539137&mt=8&ct=llms): download, ratings and full description
 - [How to find duplicate and similar photos on iPhone](https://picbutler.com/guides/duplicate-photos-iphone/): what Apple's Duplicates album catches and what it misses
 - [Pricing](https://picbutler.com/pricing.md): plans and prices in plain text
 - [Support](https://picbutler.com/support.html)

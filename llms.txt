@@ -1,6 +1,6 @@
 # PicButler
 
-> PicButler is an iPhone app (iOS 17 or later) that cleans up and organizes your photo library. It groups duplicate and similar photos, keeps the best shot of each group by sharpness, lighting and resolution, explains why it won, and turns trips and events into albums in Apple Photos. Photo analysis runs on the iPhone; photos never leave the device. Made by Herenow Software LLC.
+> PicButler is your personal photo butler for iPhone. It frees up storage by going through your camera roll with you, month by month: it clears the clutter, helps you keep only the photos you love from every trip and event, and saves them as albums in Apple Photos. Everything stays on your phone. Tagline: "Free up space. Keep what matters." Requires iOS 17 or later. Made by Herenow Software LLC.
 
 ## What it does
 
@@ -21,7 +21,8 @@
 ## Privacy
 
 - One permission: the photo library. No contacts, microphone, calendar or location.
-- No ads inside the app, no tracking across other apps, no App Tracking Transparency prompt.
+- No ads, ever. No tracking across other apps, no App Tracking Transparency prompt.
+- No generative AI on your photos: PicButler never creates or retouches images. It uses Apple's on-device image analysis to group similar photos and score them, shows why it picked each one, and the user makes the final call.
 
 ## Links
 

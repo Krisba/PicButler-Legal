@@ -17,6 +17,6 @@ Purchases and cancellations go through the App Store.
 - Free trial: 3 days
 - Includes: everything in PicButler
 
-Cancel anytime from the App Store. No weekly plans.
+Cancel anytime from the App Store. No weekly plans. No ads.
 
 App Store: https://apps.apple.com/app/apple-store/id6760083866?pt=128539137&mt=8&ct=web

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://picbutler.com/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://picbutler.com/guides/free-up-iphone-storage-photos/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://picbutler.com/guides/duplicate-photos-iphone/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://picbutler.com/press/</loc><lastmod>2026-10-16</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://picbutler.com/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-trip-to-review.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-duplicates-keep-best.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-swipe-keep-or-let-go.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-collection-albums.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-instagram-carousel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-app-icon.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://picbutler.com/guides/free-up-iphone-storage-photos/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-trip-to-review.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://picbutler.com/guides/duplicate-photos-iphone/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-duplicates-keep-best.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://picbutler.com/press/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-trip-to-review.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-duplicates-keep-best.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-swipe-keep-or-let-go.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-collection-albums.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-instagram-carousel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://picbutler.com/assets/picbutler-app-icon.png</image:loc></image:image>
+  </url>
   <url><loc>https://picbutler.com/support.html</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://picbutler.com/privacy-policy.html</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://picbutler.com/terms-of-use.html</loc><lastmod>2026-10-16</lastmod></url>

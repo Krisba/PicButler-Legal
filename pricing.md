@@ -5,7 +5,7 @@ Purchases and cancellations go through the App Store.
 
 ## Free
 - Price: $0
-- Includes: curate one whole month of your choice, clear old screenshots, use Rediscover every day, and see the similar and duplicate photos in Cleanup
+- Includes: curate any month of your photos, clear old screenshots, and use Rediscover every day
 
 ## PicButler Pro, monthly
 - Price: $6.99 per month

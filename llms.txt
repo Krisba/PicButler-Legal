@@ -15,8 +15,9 @@
 ## Pricing
 
 - Free: curate any month of the user's photos, clear old screenshots, and use Rediscover every day.
-- PicButler Pro monthly: $6.99 per month, no free trial.
-- PicButler Pro annual: $29.99 per year, billed once, with a 3-day free trial.
+- PicButler Pro monthly: $6.99 per month.
+- PicButler Pro annual: $29.99 per year, billed once.
+- No free trial on either plan.
 - Cancel anytime from the App Store.
 
 ## Privacy

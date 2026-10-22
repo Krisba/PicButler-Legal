@@ -1,6 +1,6 @@
 # Pricing: PicButler
 
-PicButler is an iPhone app (iOS 17 or later). Prices are in USD on the US App Store, as of October 15, 2026.
+PicButler is an iPhone app (iOS 17 or later). Prices are in USD on the US App Store, as of October 22, 2026.
 Purchases and cancellations go through the App Store.
 
 ## Free
@@ -14,7 +14,7 @@ Purchases and cancellations go through the App Store.
 
 ## PicButler Pro, annual
 - Price: $29.99 per year, billed once
-- Free trial: 3 days
+- Free trial: none
 - Includes: everything in PicButler
 
 Cancel anytime from the App Store. No weekly plans. No ads.

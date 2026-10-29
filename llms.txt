@@ -8,16 +8,15 @@
 - Groups exact duplicates and near-identical shots (bursts, repeated takes), keeps the best one and explains the choice. The user can pick a different photo.
 - Lets the user swipe through the remaining photos to keep or let go, and prepares favorites for sharing on Instagram.
 - Saves the kept photos as an album in the Photos app, so it syncs with iCloud Photos.
-- Rediscover: every day, ten photos of one theme from across the years; kept photos go to that theme's album in Apple Photos. Free for everyone.
+- Rediscover: every day, ten photos of one theme from across the years; kept photos go to that theme's album in Apple Photos. Included for everyone, subscribed or not.
 - Cleanup tab: similar and duplicate photos, large videos, Live Photos that can be converted to save space, and old screenshots.
 - Deleted photos go to Recently Deleted in Apple Photos and can be recovered for 30 days. Nothing is deleted without confirmation.
 
 ## Pricing
 
-- Free: curate any month of the user's photos, clear old screenshots, and use Rediscover every day.
-- PicButler Pro monthly: $6.99 per month.
-- PicButler Pro annual: $29.99 per year, billed once.
-- No free trial on either plan.
+- PicButler Pro annual: $29.99 per year, billed once, with a 7-day free trial for new subscribers.
+- PicButler Pro monthly: $6.99 per month, no free trial.
+- After the trial, if the user cancels, the free part stays: curate one month of photos, clear old screenshots, and use Rediscover every day.
 - Cancel anytime from the App Store.
 
 ## Privacy

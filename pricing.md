@@ -1,11 +1,7 @@
 # Pricing: PicButler
 
-PicButler is an iPhone app (iOS 17 or later). Prices are in USD on the US App Store, as of October 29, 2026.
+PicButler is an iPhone app (iOS 17 or later). Prices are in USD on the US App Store, as of November 13, 2026.
 Purchases and cancellations go through the App Store.
-
-## Free (after the trial)
-- Price: $0
-- Includes: curate one month of your photos, clear old screenshots, and use Rediscover every day
 
 ## PicButler Pro, monthly
 - Price: $6.99 per month
